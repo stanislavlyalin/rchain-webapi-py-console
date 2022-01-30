@@ -48,7 +48,7 @@ def get_result_at_par(sig: str, block_hash: str, use_pre_state_hash: bool = Fals
         },
         'usePreStateHash': use_pre_state_hash
     }
-    return requests.post('http://localhost:40403/api/data-at-par', json=json)
+    return requests.post('http://localhost:40403/api/data-at-name-by-block-hash', json=json)
 
 
 if __name__ == '__main__':
